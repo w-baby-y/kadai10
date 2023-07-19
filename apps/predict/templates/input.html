@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>予測</title>
+  </head>
+  <body>
+    <h1>数値を入力してください</h1>
+    <form action="/" method="post">
+      <label for="quantity">数量:</label><br />
+      <input type="text" id="quantity" name="quantity" /><br />
+      <label for="area">面積:</label><br />
+      <input type="text" id="area" name="area" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    {% if prediction %}
+    <h2>予測結果: {{ prediction }}</h2>
+    {% endif %}
+  </body>
+</html>
